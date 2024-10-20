@@ -1,6 +1,28 @@
 version: 2
 
 models:
+  - name: locations_with_recorded_pops
+    columns:
+      - name: city_id
+        description: ""
+      - name: city_name
+        description: ""
+      - name: state_province_id
+        description: ""
+      - name: state_province_name
+        description: ""
+      - name: country_id
+        description: ""
+      - name: country_name
+        description: ""
+      - name: latitude
+        description: ""
+      - name: longitude
+        description: ""
+      - name: latest_recorded_population
+        description: ""
+        data_tests:
+          - not_null
   - name: sales_transactions_outstanding
     columns:
       - name: customer_id

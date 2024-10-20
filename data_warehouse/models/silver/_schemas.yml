@@ -1,6 +1,37 @@
 version: 2
 
 models:
+  - name: location
+    columns:
+      - name: city_id
+        description: ""
+        data_tests:
+          - not_null
+          - unique
+      - name: city_name
+        description: ""
+      - name: state_province_id
+        description: ""
+        data_tests:
+          - not_null
+      - name: state_province_name
+        description: ""
+      - name: country_id
+        description: ""
+        data_tests:
+          - not_null
+      - name: country_name
+        description: ""
+      - name: latitude
+        description: ""
+      - name: longitude
+        description: ""
+      - name: latest_recorded_population
+        description: ""
+      - name: created_at
+        description: ""
+        data_tests:
+          - not_null
   - name: sales_transactions
     columns:
       - name: customer_id
