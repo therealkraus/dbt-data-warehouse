@@ -1,0 +1,103 @@
+version: 2
+
+models:
+  - name: customers
+    columns:
+      - name: CustomerID
+        description: ""
+      - name: CustomerName
+        description: ""
+      - name: BillToCustomerID
+        description: ""
+      - name: CustomerCategoryID
+        description: ""
+      - name: BuyingGroupID
+        description: ""
+      - name: PrimaryContactPersonID
+        description: ""
+      - name: AlternateContactPersonID
+        description: ""
+      - name: DeliveryMethodID
+        description: ""
+      - name: DeliveryCityID
+        description: ""
+      - name: CreditLimit
+        description: ""
+      - name: AccountOpenedDate
+        description: ""
+      - name: StandardDiscountPercentage
+        description: ""
+      - name: IsStatementSent
+        description: ""
+      - name: IsOnCreditHold
+        description: ""
+      - name: PaymentDays
+        description: ""
+      - name: PhoneNumber
+        description: ""
+      - name: WebsiteURL
+        description: ""
+      - name: DeliveryAddressLine
+        description: ""
+      - name: DeliveryLocationLat
+        description: ""
+      - name: DeliveryLocationLong
+        description: ""
+  - name: invoices
+    columns:
+      - name: InvoiceID
+        description: ""
+      - name: CustomerID
+        description: ""
+      - name: BillToCustomerID
+        description: ""
+      - name: OrderID
+        description: ""
+      - name: DeliveryMethodID
+        description: ""
+      - name: ContactPersonID
+        description: ""
+      - name: AccountsPersonID
+        description: ""
+      - name: SalespersonPersonID
+        description: ""
+      - name: PackedByPersonID
+        description: ""
+      - name: InvoiceDate
+        description: ""
+      - name: CustomerPurchaseOrderNumber
+        description: ""
+      - name: DeliveryInstructions
+        description: ""
+      - name: TotalDryItems
+        description: ""
+      - name: TotalChillerItems
+        description: ""
+      - name: ConfirmedDeliveryTime
+        description: ""
+      - name: ConfirmedReceivedBy
+        description: ""
+  - name: orders
+    columns:
+      - name: OrderID
+        description: ""
+      - name: CustomerID
+        description: ""
+      - name: SalespersonPersonID
+        description: ""
+      - name: PickedByPersonID
+        description: ""
+      - name: ContactPersonID
+        description: ""
+      - name: BackorderOrderID
+        description: ""
+      - name: OrderDate
+        description: ""
+      - name: ExpectedDeliveryDate
+        description: ""
+      - name: CustomerPurchaseOrderNumber
+        description: ""
+      - name: IsUndersupplyBackordered
+        description: ""
+      - name: PickingCompletedWhen
+        description: ""

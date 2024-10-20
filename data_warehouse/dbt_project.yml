@@ -37,3 +37,6 @@ models:
       purchasing:
         +schema: bronze
         +materialized: table
+      sales:
+        +schema: bronze
+        +materialized: table
