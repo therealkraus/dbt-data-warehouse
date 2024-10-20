@@ -21,6 +21,10 @@ python3.12 generate_duckdb.py
 
 cd "$SCRIPT_DIR/data_warehouse"
 
+# Run the dbt deps command to install the dependencies
+
+dbt deps
+
 # Run the dbt build command to build the data warehouse
 
 dbt build
