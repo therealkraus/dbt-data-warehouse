@@ -2,3 +2,31 @@ version: 2
 
 models:
   - name: sales_transactions
+    columns:
+      - name: customer_id
+        description: ""
+        data_tests:
+          - not_null
+      - name: customer_name
+        description: ""
+      - name: customer_transaction_id
+        description: ""
+        data_tests:
+          - not_null
+      - name: invoice_id
+        description: ""
+        data_tests:
+          - not_null
+          - unique
+      - name: transaction_amount
+        description: ""
+      - name: outstanding_balance
+        description: ""
+      - name: is_finalized
+        description: ""
+      - name: invoice_date
+        description: ""
+      - name: created_at
+        description: ""
+        data_tests:
+          - not_null
