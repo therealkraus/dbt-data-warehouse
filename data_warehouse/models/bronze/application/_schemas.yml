@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: cities
+    columns:
+      - name: CityID
+        description: ""
+      - name: CityName
+        description: ""
+      - name: StateProvinceID
+        description: ""
+      - name: Latitude
+        description: ""
+      - name: Longitude
+        description: ""
+      - name: LatestRecordedPopulation
+        description: ""
+  - name: countries
+    columns:
+      - name: CountryID
+        description: ""
+      - name: CountryName
+        description: ""
+      - name: FormalName
+        description: ""
+      - name: LatestRecordedPopulation
+        description: ""
+      - name: Continent
+        description: ""
+      - name: Region
+        description: ""
+      - name: Subregion
+        description: ""
+  - name: stateprovinces
+    columns:
+      - name: StateProvinceID
+        description: ""
+      - name: StateProvinceCode
+        description: ""
+      - name: StateProvinceName
+        description: ""
+      - name: CountryID
+        description: ""
+      - name: SalesTerritory
+        description: ""
+      - name: LatestRecordedPopulation
+        description: ""

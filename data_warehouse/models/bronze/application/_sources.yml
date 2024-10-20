@@ -1,0 +1,53 @@
+version: 2
+
+sources:
+  - name: application
+    schema: loading
+    tables:
+      - name: cities
+        description: "There are many addresses stored in the system, for people, customer organization delivery addresses, pickup addresses at suppliers, etc. Whenever an address is stored, there is a reference to a city in this table. There is also a spatial location for each city."
+        columns:
+          - name: CityID
+            description: ""
+          - name: CityName
+            description: ""
+          - name: StateProvinceID
+            description: ""
+          - name: Latitude
+            description: ""
+          - name: Longitude
+            description: ""
+          - name: LatestRecordedPopulation
+            description: ""
+      - name: countries
+        description: " 	States or Provinces are part of countries/regions. This table has details of those, including spatial data describing the boundaries of each country/region."
+        columns:
+          - name: CountryID
+            description: ""
+          - name: CountryName
+            description: ""
+          - name: FormalName
+            description: ""
+          - name: LatestRecordedPopulation
+            description: ""
+          - name: Continent
+            description: ""
+          - name: Region
+            description: ""
+          - name: Subregion
+            description: ""
+      - name: stateprovinces
+        description: "Cities are part of states or provinces. This table has details of those, including spatial data describing the boundaries each state or province."
+        columns:
+          - name: StateProvinceID
+            description: ""
+          - name: StateProvinceCode
+            description: ""
+          - name: StateProvinceName
+            description: ""
+          - name: CountryID
+            description: ""
+          - name: SalesTerritory
+            description: ""
+          - name: LatestRecordedPopulation
+            description: ""
