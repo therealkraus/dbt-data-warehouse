@@ -34,6 +34,9 @@ models:
       application:
         +schema: bronze
         +materialized: table
+      data_observability:
+        +schema: bronze
+        +materialized: table
       purchasing:
         +schema: bronze
         +materialized: table
@@ -46,3 +49,6 @@ models:
     gold:
       +schema: gold
       +materialized: table
+
+on-run-end:
+  - "{{ log_dbt_results(results) }}"
