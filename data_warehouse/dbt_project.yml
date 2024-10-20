@@ -34,3 +34,6 @@ models:
       application:
         +schema: bronze
         +materialized: table
+      purchasing:
+        +schema: bronze
+        +materialized: table

@@ -1,0 +1,117 @@
+version: 2
+
+sources:
+  - name: purchasing
+    schema: loading
+    tables:
+      - name: purchaseorderlines
+        description: "Detail lines from supplier purchase orders"
+        columns:
+          - name: PurchaseOrderLineID
+            description: ""
+          - name: PurchaseOrderID
+            description: ""
+          - name: StockItemID
+            description: ""
+          - name: OrderedOuters
+            description: ""
+          - name: Description
+            description: ""
+          - name: ReceivedOuters
+            description: ""
+          - name: PackageTypeID
+            description: ""
+          - name: ExpectedUnitPricePerOuter
+            description: ""
+          - name: LastReceiptDate
+            description: ""
+          - name: IsOrderLineFinalized
+            description: ""
+      - name: purchaseorders
+        description: "Details of supplier purchase orders"
+        columns:
+          - name: PurchaseOrderID
+            description: ""
+          - name: SupplierID
+            description: ""
+          - name: OrderDate
+            description: ""
+          - name: DeliveryMethodID
+            description: ""
+          - name: ContactPersonID
+            description: ""
+          - name: ExpectedDeliveryDate
+            description: ""
+          - name: SupplierReference
+            description: ""
+          - name: IsOrderFinalized
+            description: ""
+      - name: suppliercategories
+        description: "Categories for suppliers (for example, novelties, toys, clothing, packaging, etc.)"
+        columns:
+          - name: SupplierCategoryID
+            description: ""
+          - name: SupplierCategoryName
+            description: ""
+      - name: suppliers
+        description: "Main entity table for suppliers (organizations)"
+        columns:
+          - name: SupplierID
+            description: ""
+          - name: SupplierName
+            description: ""
+          - name: SupplierCategoryID
+            description: ""
+          - name: PrimaryContactPersonID
+            description: ""
+          - name: AlternateContactPersonID
+            description: ""
+          - name: DeliveryMethodID
+            description: ""
+          - name: DeliveryCityID
+            description: ""
+          - name: PostalCityID
+            description: ""
+          - name: SupplierReference
+            description: ""
+          - name: PaymentDays
+            description: ""
+          - name: PhoneNumber
+            description: ""
+          - name: WebsiteURL
+            description: ""
+          - name: DeliveryAddressLine
+            description: ""
+          - name: DeliveryLocationLat
+            description: ""
+          - name: DeliveryLocationLong
+            description: ""
+      - name: suppliertransactions
+        description: "All financial transactions that are supplier-related (invoices, payments)"
+        columns:
+          - name: SupplierTransactionID
+            description: ""
+          - name: SupplierID
+            description: ""
+          - name: TransactionTypeID
+            description: ""
+          - name: PurchaseOrderID
+            description: ""
+          - name: PaymentMethodID
+            description: ""
+          - name: SupplierInvoiceNumber
+            description: ""
+          - name: TransactionDate
+            description: ""
+          - name: AmountExcludingTax
+            description: ""
+          - name: TaxAmount
+            description: ""
+          - name: TransactionAmount
+            description: ""
+          - name: OutstandingBalance
+            description: ""
+          - name: FinalizationDate
+            description: ""
+          - name: IsFinalized
+            description: ""
