@@ -53,6 +53,10 @@ def main():
         )
 
         con.sql(
+            f"CREATE TABLE example.loading.customertransactions AS SELECT * FROM read_csv_auto('{curr_dir / 'data' / 'sales' / 'customertransactions.csv'}', nullstr=['NULL', '']);"
+        )
+
+        con.sql(
             f"CREATE TABLE example.loading.invoices AS SELECT * FROM read_csv_auto('{curr_dir / 'data' / 'sales' / 'invoices.csv'}', nullstr=['NULL', '']);"
         )
 

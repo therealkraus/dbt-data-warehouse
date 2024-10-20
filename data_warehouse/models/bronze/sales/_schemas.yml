@@ -43,6 +43,32 @@ models:
         description: ""
       - name: DeliveryLocationLong
         description: ""
+  - name: customertransactions
+    columns:
+      - name: CustomerTransactionID
+        description: ""
+      - name: CustomerID
+        description: ""
+      - name: TransactionTypeID
+        description: ""
+      - name: InvoiceID
+        description: ""
+      - name: PaymentMethodID
+        description: ""
+      - name: TransactionDate
+        description: ""
+      - name: AmountExcludingTax
+        description: ""
+      - name: TaxAmount
+        description: ""
+      - name: TransactionAmount
+        description: ""
+      - name: OutstandingBalance
+        description: ""
+      - name: FinalizationDate
+        description: ""
+      - name: IsFinalized
+        description: ""
   - name: invoices
     columns:
       - name: InvoiceID
