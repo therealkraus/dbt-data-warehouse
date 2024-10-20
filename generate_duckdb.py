@@ -15,9 +15,6 @@ def main():
 
     with duckdb.connect(str(db_path)) as con:
         con.sql("CREATE SCHEMA IF NOT EXISTS example.loading;")
-        con.sql("CREATE SCHEMA IF NOT EXISTS example.bronze;")
-        con.sql("CREATE SCHEMA IF NOT EXISTS example.silver;")
-        con.sql("CREATE SCHEMA IF NOT EXISTS example.gold;")
 
         con.sql(
             f"CREATE TABLE example.loading.cities AS SELECT * FROM read_csv_auto('{curr_dir / 'data' / 'application' / 'cities.csv'}', nullstr=['NULL', '']);"
